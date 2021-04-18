@@ -1,70 +1,93 @@
-html,
 body {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-#root {
-  height: 100vh;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.joinOuterContainer {
+  height: 90vh;
   display: flex;
   justify-content: center;
-  text-align: center;
-  height: 100vh;
   align-items: center;
-  background-color: #1a1a1d;
+  background: -webkit-linear-gradient(left, #b7fc80, #24d14f);
+  font-family: "Nunito", sans-serif;
 }
 
-.joinInnerContainer {
-  width: 20%;
+h2 {
+  font-size: 70px;
+  margin-left: 270px;
 }
 
-.joinInput {
-  border-radius: 0;
-  padding: 15px 20px;
-  width: 100%;
+img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  height: 20%;
+  margin-left: 540px;
+  margin-top: -170px;
 }
 
-.heading {
-  color: white;
-  font-size: 2.5em;
-  padding-bottom: 10px;
-  border-bottom: 2px solid white;
+.cont {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 900px;
+  height: 550px;
+  background: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
 }
 
-.button {
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #2979ff;
-  padding: 20px;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
-  width: 100%;
+.sign-in {
+  padding-top: 100px;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-.mt-20 {
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textInput {
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 24px;
+  border: 2px solid #0fd361;
+  color: black;
+  width: 250px;
+  height: 40px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+.signinButton {
   margin-top: 20px;
+  color: black;
+  border: 0;
+  background: none;
+  border-radius: 24px;
+  border: 2px solid #0fd361;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .joinOuterContainer {
-    height: 100%;
-  }
-
-  .joinInnerContainer {
-    width: 90%;
-  }
+.signinButton:hover {
+  background: -webkit-linear-gradient(left, #86d446, #0ec43b);
+  color: white;
+  border: none;
 }
 
-button:focus {
-  outline: 0;
+.textInput:focus {
+  width: 350px;
 }
