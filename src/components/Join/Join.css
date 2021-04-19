@@ -60,7 +60,7 @@ img {
   margin-bottom: 10px;
   text-align: center;
   border-radius: 24px;
-  border: 2px solid #0fd361;
+  border: 1px solid #0fd361;
   color: black;
   width: 250px;
   height: 40px;
@@ -74,7 +74,7 @@ img {
   border: 0;
   background: none;
   border-radius: 24px;
-  border: 2px solid #0fd361;
+  border: 1px solid #0fd361;
   cursor: pointer;
   height: 40px;
   width: 100px;
