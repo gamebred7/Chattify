@@ -12,7 +12,7 @@ h2 {
   margin-left: 270px;
 }
 
-img {
+.appLogo {
   overflow: hidden;
   z-index: 2;
   position: absolute;
@@ -45,12 +45,19 @@ img {
 }
 
 .block {
-  margin-top: -20px;
+  margin-top: -15px;
   display: flex;
   justify-content: center;
 }
 
-.box {
+.signInBlock {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,8 +76,11 @@ img {
   outline-width: 0;
 }
 
-.signinButton {
+.mt-20 {
   margin-top: 20px;
+}
+
+.signinButton {
   color: black;
   border: 0;
   background: none;

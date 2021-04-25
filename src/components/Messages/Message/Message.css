@@ -91,3 +91,10 @@
 .backgroundLight {
   background: #f3f3f3;
 }
+
+.profileImage {
+  border-radius: 50%;
+  height: 25px;
+  margin-left: -9px;
+  margin-top: -20px;
+}

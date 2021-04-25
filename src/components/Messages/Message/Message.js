@@ -2,10 +2,10 @@ import React from "react";
 
 import "./Message.css";
 
-const Message = ({ message: { text, user, time }, name }) => {
+const Message = ({ message: { text, user, time, photo }, name }) => {
   let isSentByCurrentUser = false;
 
-  const trimmedName = name.trim().toLowerCase();
+  const trimmedName = name.trim();
 
   const setMessageType = () => {
     switch (user) {
@@ -27,6 +27,7 @@ const Message = ({ message: { text, user, time }, name }) => {
                   <p>{time}</p>
                 </div>
               </div>
+              <img src={photo} alt="Profile" className="profileImage" />
             </div>
           </div>
         );

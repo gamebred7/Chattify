@@ -1,9 +1,9 @@
 import React from "react";
-import { AttachFile, MoreVert, SearchOutlined } from "@material-ui/icons";
+import { AttachFile, SearchOutlined } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
 import "./InfoBar.css";
 
-const InfoBar = ({ room }) => (
+const InfoBar = ({ room, photo }) => (
   <div className="header">
     <div className="headerInfo">
       <h3>{room}</h3>
@@ -15,9 +15,9 @@ const InfoBar = ({ room }) => (
     <IconButton>
       <AttachFile />
     </IconButton>
-    <IconButton>
-      <MoreVert />
-    </IconButton>
+    <div>
+      <img src={photo} alt="Profile" className="image" />
+    </div>
   </div>
 );
 
