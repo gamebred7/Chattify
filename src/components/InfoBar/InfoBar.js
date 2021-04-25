@@ -1,17 +1,23 @@
 import React from "react";
+import { AttachFile, MoreVert, SearchOutlined } from "@material-ui/icons";
+import { IconButton } from "@material-ui/core";
 import "./InfoBar.css";
-import closeIcon from "../../icons/closeIcon.png";
-import onlineIcon from "../../icons/onlineIcon.png";
 
 const InfoBar = ({ room }) => (
-  <div className="infoBar">
-    <div className="leftInnerContainer">
-      {/* <img className="onlineIcon" src={onlineIcon} alt="online" /> */}
+  <div className="header">
+    <div className="headerInfo">
       <h3>{room}</h3>
     </div>
-    <div className="rightInnerContainer">
-      <a href="/">{/* <img src={closeIcon} alt="close" /> */}</a>
-    </div>
+
+    <IconButton>
+      <SearchOutlined />
+    </IconButton>
+    <IconButton>
+      <AttachFile />
+    </IconButton>
+    <IconButton>
+      <MoreVert />
+    </IconButton>
   </div>
 );
 

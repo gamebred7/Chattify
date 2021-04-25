@@ -1,29 +1,70 @@
-.form {
+.footer {
   display: flex;
-  border-top: 2px solid #d3d3d3;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+  font-family: "Nunito", sans-serif;
 }
 
-.input {
-  border: none;
-  border-radius: 0;
-  padding: 5%;
-  width: 80%;
-  font-size: 1.2em;
+.footer > form {
+  flex: 1;
+  display: flex;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
+.footer > form > input {
+  flex: 1;
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.footer > form > button {
+  display: none;
+}
+
+.footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
 }
 
 .sendButton {
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #2979ff;
-  padding: 20px;
-  display: inline-block;
-  border: none;
-  width: 20%;
+  margin-right: 8px;
+  color: black;
+  border: 0;
+  background: none;
+  border-radius: 24px;
+  border: 1px solid #0ec43b;
+  cursor: pointer;
+  height: 40px;
+  width: 60px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  outline-width: 0;
+}
+
+.sendButton:hover {
+  background: -webkit-linear-gradient(left, #86d446, #0ec43b);
+  color: white;
+}
+
+.sendIcon {
+  color: #0ec43b;
+  margin-left: -8px;
+  margin-top: -3px;
+  width: 60px;
+  height: 42px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sendIcon:hover {
+  color: white;
+}
+
+.telegramIcon {
+  transform: scale(1.3);
 }

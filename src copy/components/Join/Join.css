@@ -1,10 +1,10 @@
 body {
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: -webkit-linear-gradient(left, #b7fc80, #24d14f);
   font-family: "Nunito", sans-serif;
-  height: 90vh;
 }
 
 h2 {

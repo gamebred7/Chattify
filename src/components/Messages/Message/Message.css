@@ -1,7 +1,7 @@
 .messageBox {
   background: #f3f3f3;
-  border-radius: 20px;
-  padding: 5px 20px;
+  border-radius: 17px;
+  padding: 2px 20px;
   color: white;
   display: inline-block;
   max-width: 80%;
@@ -11,7 +11,7 @@
   width: 100%;
   letter-spacing: 0;
   float: left;
-  font-size: 1.1em;
+  font-size: 14px;
   word-wrap: break-word;
 }
 
@@ -22,8 +22,8 @@
 .messageContainer {
   display: flex;
   justify-content: flex-end;
-  padding: 0 5%;
-  margin-top: 3px;
+  padding: 0 2%;
+  margin-top: 6px;
 }
 
 .sentText {
@@ -32,6 +32,16 @@
   font-family: Helvetica;
   color: #828282;
   letter-spacing: 0.3px;
+  font-size: 12px;
+}
+
+.admin-message {
+  display: flex;
+  align-self: center;
+  font-family: Helvetica;
+  color: rgba(0, 0, 0, 0.42);
+  letter-spacing: 0.3px;
+  font-size: 12px;
 }
 
 .pl-10 {
@@ -44,6 +54,10 @@
 
 .justifyStart {
   justify-content: flex-start;
+}
+
+.justifyCenter {
+  justify-content: center;
 }
 
 .justifyEnd {
@@ -59,7 +73,7 @@
 }
 
 .backgroundBlue {
-  background: #2979ff;
+  background: -webkit-linear-gradient(left, #86d446, #0ec43b);
 }
 
 .backgroundLight {
