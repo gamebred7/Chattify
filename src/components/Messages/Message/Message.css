@@ -3,8 +3,9 @@
   border-radius: 17px;
   padding: 2px 20px;
   color: white;
-  display: inline-block;
+  display: flex;
   max-width: 80%;
+  flex-direction: column;
 }
 
 .messageText {
@@ -17,6 +18,17 @@
 
 .messageText img {
   vertical-align: middle;
+}
+
+.messageTime {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Helvetica;
+  font-size: 10px;
+  margin-right: -10px;
+  margin-bottom: -8px;
+  height: 12px;
+  align-items: flex-end;
 }
 
 .messageContainer {
@@ -32,7 +44,7 @@
   font-family: Helvetica;
   color: #828282;
   letter-spacing: 0.3px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .admin-message {
@@ -69,7 +81,7 @@
 }
 
 .colorDark {
-  color: #353535;
+  color: #635f5f;
 }
 
 .backgroundBlue {

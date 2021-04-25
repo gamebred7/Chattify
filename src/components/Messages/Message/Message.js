@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Message.css";
 
-const Message = ({ message: { text, user }, name }) => {
+const Message = ({ message: { text, user, time }, name }) => {
   let isSentByCurrentUser = false;
 
   const trimmedName = name.trim().toLowerCase();
@@ -23,6 +23,9 @@ const Message = ({ message: { text, user }, name }) => {
               <div className="sentText pl-10">{user}</div>
               <div className="messageBox backgroundLight">
                 <p className="messageText colorDark">{text}</p>
+                <div className="messageTime colorDark">
+                  <p>{time}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -38,6 +41,9 @@ const Message = ({ message: { text, user }, name }) => {
     <div className="messageContainer justifyEnd">
       <div className="messageBox backgroundBlue">
         <p className="messageText colorWhite">{text}</p>
+        <div className="messageTime">
+          <p>{time}</p>
+        </div>
       </div>
     </div>
   ) : (
